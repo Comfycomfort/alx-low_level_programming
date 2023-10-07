@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- *main - This is my entry point for the program
+ *main - This is my entry point
  *Return: 0
  */
-
 int main(void)
 {
 	int tens;

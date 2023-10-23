@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 #define NULL 0
 
 /**
@@ -19,4 +19,19 @@ char *_strchr(char *s, char c)
 		return (&s[i]);
 	else
 		return (NULL);
+}
+
+/* pointer arithmetic version
+
+char *_strchr(char *s, char c)
+{
+        int i = 0;
+
+	while (*(s + i) && *(s + i) != c)
+	    i++;
+
+	if (*(s + i) == c)
+	    return (s + i);
+	else
+	    return (NULL);
 }

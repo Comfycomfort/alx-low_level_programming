@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "dog.h"
+#include <string.h>
 
 /**
  * len - find length of string
@@ -23,7 +23,7 @@ int len(char *str)
  * @src: this is the source to copy
  * Return: copy of original source
  */
-char *strcpy(char *dest, char *src)
+char *const (char *dest, char *src)
 {
 	int i;
 
